@@ -1,0 +1,49 @@
+{
+    "name": "cineca/nephPdf",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/",
+            "Cineca\\" : "src/"
+        },
+        "classmap": [
+        "src/Cineca/tcpdf/fonts",
+        "src/Cineca/tcpdf/config",
+        "src/Cineca/tcpdf/include",
+        "src/Cineca/tcpdf/tcpdf.php",
+        "src/Cineca/tcpdf/tcpdf_parser.php",
+        "src/Cineca/tcpdf/tcpdf_import.php",
+        "src/Cineca/tcpdf/tcpdf_barcodes_1d.php",
+        "src/Cineca/tcpdf/tcpdf_barcodes_2d.php",
+        "src/Cineca/tcpdf/include/tcpdf_colors.php",
+        "src/Cineca/tcpdf/include/tcpdf_filters.php",
+        "src/Cineca/tcpdf/include/tcpdf_font_data.php",
+        "src/Cineca/tcpdf/include/tcpdf_fonts.php",
+        "src/Cineca/tcpdf/include/tcpdf_images.php",
+        "src/Cineca/tcpdf/include/tcpdf_static.php",
+        "src/Cineca/tcpdf/include/barcodes/datamatrix.php",
+        "src/Cineca/tcpdf/include/barcodes/pdf417.php",
+        "src/Cineca/tcpdf/include/barcodes/qrcode.php"
+        ]
+    },
+    "autoload-dev": {
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": "2.7.*"
+    },
+    "require-dev": {
+    },
+    "scripts": {
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
+    "extra": {
+    }
+}
