@@ -93,8 +93,8 @@ class NephTCPDF
         DefaultTemplate::setLangDependent($pdf);
         DefaultTemplate::setBodyFonts($pdf);
         DefaultTemplate::addPage($pdf);
-        DefaultTemplate::applyWatermark($pdf);
         DefaultTemplate::printTextHtmlCell($pdf,$html);
+        DefaultTemplate::applyWatermark($pdf);
         // Close and output PDF document
         // This method has several options, check the source code documentation for more information.
         if(isset($infos['filename']))

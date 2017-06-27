@@ -213,6 +213,8 @@ class DefaultTemplate extends templateAbstract
 
   public static function applyWatermark($pdf)
   {
+    $pdf->Image('@FAC SIMILE FAC SIMILE FAC SIMILE', 50, 50, 100, '', '', 'http://www.cineca.it', '', false, 300);
+    /*
     $fontType = "Helvetica";
     $fontSize = 35;
     $fontStyle = "B";
@@ -236,6 +238,7 @@ class DefaultTemplate extends templateAbstract
     $pdf->StopTransform();
     // Reset the transparency to default
     $pdf->SetAlpha(1);
+    */
   }
 
 }
