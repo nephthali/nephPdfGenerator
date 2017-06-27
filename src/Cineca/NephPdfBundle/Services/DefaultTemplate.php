@@ -38,22 +38,22 @@ class DefaultTemplate extends templateInterface
   public static function setDefaultsConstant()
   {
     if (!defined('K_TCPDF_EXTERNAL_CONFIG')
-      define ('K_TCPDF_EXTERNAL_CONFIG', true);
+      define('K_TCPDF_EXTERNAL_CONFIG', true);
     //var_dump(K_PATH_MAIN); die;
     //define ('K_PATH_IMAGES', K_PATH_MAIN.'images/');
     //define ('K_BLANK_IMAGE', '_blank.png');
     if (!defined('PDF_PAGE_FORMAT')
-      define ('PDF_PAGE_FORMAT', 'A4');
+      define('PDF_PAGE_FORMAT', 'A4');
     if (!defined('PDF_PAGE_ORIENTATION')
-      define ('PDF_PAGE_ORIENTATION', 'P');
+      define('PDF_PAGE_ORIENTATION', 'P');
     //define ('PDF_CREATOR', 'TCPDF');
     //define ('PDF_AUTHOR', 'TCPDF');
     if (!defined('PDF_HEADER_TITLE')
-      define ('PDF_HEADER_TITLE', 'PDF');
+      define('PDF_HEADER_TITLE', 'PDF');
     if (!defined('PDF_HEADER_STRING')
-      define ('PDF_HEADER_STRING', "by Nephthali Djabon - Cineca.it\nwww.cineca.it");
+      define('PDF_HEADER_STRING', "by Nephthali Djabon - Cineca.it\nwww.cineca.it");
     if (!defined('PDF_UNIT')
-      define ('PDF_UNIT', 'mm');
+      define('PDF_UNIT', 'mm');
     //define ('PDF_MARGIN_HEADER', 5);
     //define ('PDF_MARGIN_FOOTER', 10);
     //define ('PDF_MARGIN_TOP', 27);
@@ -61,17 +61,17 @@ class DefaultTemplate extends templateInterface
     //define ('PDF_MARGIN_LEFT', 15);
     //define ('PDF_MARGIN_RIGHT', 15);
     if (!defined('PDF_FONT_NAME_MAIN')
-      define ('PDF_FONT_NAME_MAIN', 'helvetica');
+      define('PDF_FONT_NAME_MAIN', 'helvetica');
     if (!defined('PDF_FONT_SIZE_MAIN')
-      define ('PDF_FONT_SIZE_MAIN', 10);
+      define('PDF_FONT_SIZE_MAIN', 10);
     if (!defined('PDF_FONT_NAME_DATA')
-      define ('PDF_FONT_NAME_DATA', 'helvetica');
+      define('PDF_FONT_NAME_DATA', 'helvetica');
     if (!defined('PDF_FONT_SIZE_DATA')
-      define ('PDF_FONT_SIZE_DATA', 8);
+      define('PDF_FONT_SIZE_DATA', 8);
     if (!defined('PDF_FONT_MONOSPACED')
-      define ('PDF_FONT_MONOSPACED', 'courier');
+      define('PDF_FONT_MONOSPACED', 'courier');
     if (!defined('PDF_IMAGE_SCALE_RATIO')
-      define ('PDF_IMAGE_SCALE_RATIO', 1.25);
+      define('PDF_IMAGE_SCALE_RATIO', 1.25);
     if (!defined('HEAD_MAGNIFICATION')
       define('HEAD_MAGNIFICATION', 1.1);
     if (!defined('K_CELL_HEIGHT_RATIO')
