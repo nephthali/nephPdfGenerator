@@ -213,25 +213,26 @@ class DefaultTemplate extends templateAbstract
 
   public static function applyWatermark($pdf)
   {
-    $tipoLetra = "Helvetica";
-    $tamanoLetra = 35;
-    $estiloLetra = "B";
-    // Calcular ancho de la cadena
-    $widthCadena = $pdf->GetStringWidth(trim("FAC SIMILE FAC SIMILE FAC SIMILE"), $tipoLetra, $estiloLetra, $tamanoLetra, false );
-    $factorCentrado = round(($widthCadena * sin(deg2rad(45))) / 2 ,0);
+    $fontType = "Helvetica";
+    $fontSize = 35;
+    $fontStyle = "B";
+    $text = "FAC SIMILE FAC SIMILE FAC SIMILE";
+    //Calcolo larghezza della catena
+    $widthCatena = $pdf->GetStringWidth(trim($text), $fontType, $fontStyle, $fontSize, false );
+    $fattoreCentraggio = round(($widthCatena * sin(deg2rad(45))) / 2 ,0);
     // Get the page width/height
     $myPageWidth = $pdf->getPageWidth();
     $myPageHeight = $pdf->getPageHeight();
     // Find the middle of the page and adjust.
-    $myX = ( $myPageWidth / 2 ) - $factorCentrado;
-    $myY = ( $myPageHeight / 2 ) + $factorCentrado;
+    $myX = ( $myPageWidth / 2 ) - $fattoreCentraggio;
+    $myY = ( $myPageHeight / 2 ) + $fattoreCentraggio;
     // Set the transparency of the text to really light
     $pdf->SetAlpha(0.09);
     // Rotate 45 degrees and write the watermarking text
     $pdf->StartTransform();
     $pdf->Rotate(45, $myX, $myY);
-    $pdf->SetFont($tipoLetra, $estiloLetra, $tamanoLetra);
-    $pdf->Text($myX, $myY ,trim("FAC SIMILE FAC SIMILE FAC SIMILE"));
+    $pdf->SetFont($fontType, $fontStyle, $fontSize);
+    $pdf->Text($myX, $myY ,trim($text));
     $pdf->StopTransform();
     // Reset the transparency to default
     $pdf->SetAlpha(1);
