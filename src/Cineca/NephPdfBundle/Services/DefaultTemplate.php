@@ -2,7 +2,7 @@
 
 namespace Cineca\NephPdfBundle\Services;
 
-class DefaultTemplate extends templateInterface
+class DefaultTemplate extends templateAbstract
 {
   /*
   const K_BLANK_IMAGE = '_blank.png';
