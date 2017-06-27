@@ -37,32 +37,32 @@ class DefaultTemplate extends templateInterface
 
   public static function setDefaultsConstant()
   {
-    if (!defined('K_TCPDF_EXTERNAL_CONFIG')
+    if (!defined('K_TCPDF_EXTERNAL_CONFIG'))
     {
       define('K_TCPDF_EXTERNAL_CONFIG', true);
     }
     //var_dump(K_PATH_MAIN); die;
     //define ('K_PATH_IMAGES', K_PATH_MAIN.'images/');
     //define ('K_BLANK_IMAGE', '_blank.png');
-    if (!defined('PDF_PAGE_FORMAT')
+    if (!defined('PDF_PAGE_FORMAT'))
     {
       define('PDF_PAGE_FORMAT', 'A4');
     }
-    if (!defined('PDF_PAGE_ORIENTATION')
+    if (!defined('PDF_PAGE_ORIENTATION'))
     {
       define('PDF_PAGE_ORIENTATION', 'P');
     }
     //define ('PDF_CREATOR', 'TCPDF');
     //define ('PDF_AUTHOR', 'TCPDF');
-    if (!defined('PDF_HEADER_TITLE')
+    if (!defined('PDF_HEADER_TITLE'))
     {
       define('PDF_HEADER_TITLE', 'PDF');
     }
-    if (!defined('PDF_HEADER_STRING')
+    if (!defined('PDF_HEADER_STRING'))
     {
       define('PDF_HEADER_STRING', "by Nephthali Djabon - Cineca.it\nwww.cineca.it");
     }
-    if (!defined('PDF_UNIT')
+    if (!defined('PDF_UNIT'))
     {
       define('PDF_UNIT', 'mm');
     }
@@ -72,53 +72,53 @@ class DefaultTemplate extends templateInterface
     //define ('PDF_MARGIN_BOTTOM', 25);
     //define ('PDF_MARGIN_LEFT', 15);
     //define ('PDF_MARGIN_RIGHT', 15);
-    if (!defined('PDF_FONT_NAME_MAIN')
+    if (!defined('PDF_FONT_NAME_MAIN'))
     {
       define('PDF_FONT_NAME_MAIN', 'helvetica');
     }
-    if (!defined('PDF_FONT_SIZE_MAIN')
+    if (!defined('PDF_FONT_SIZE_MAIN'))
     {
       define('PDF_FONT_SIZE_MAIN', 10);
     }
-    if (!defined('PDF_FONT_NAME_DATA')
+    if (!defined('PDF_FONT_NAME_DATA'))
     {
       define('PDF_FONT_NAME_DATA', 'helvetica');
     }
-    if (!defined('PDF_FONT_SIZE_DATA')
+    if (!defined('PDF_FONT_SIZE_DATA'))
     {
       define('PDF_FONT_SIZE_DATA', 8);
     }
-    if (!defined('PDF_FONT_MONOSPACED')
+    if (!defined('PDF_FONT_MONOSPACED'))
     {
       define('PDF_FONT_MONOSPACED', 'courier');
     }
-    if (!defined('PDF_IMAGE_SCALE_RATIO')
+    if (!defined('PDF_IMAGE_SCALE_RATIO'))
     {
       define('PDF_IMAGE_SCALE_RATIO', 1.25);
     }
-    if (!defined('HEAD_MAGNIFICATION')
+    if (!defined('HEAD_MAGNIFICATION'))
     {
       define('HEAD_MAGNIFICATION', 1.1);
     }
-    if (!defined('K_CELL_HEIGHT_RATIO')
+    if (!defined('K_CELL_HEIGHT_RATIO'))
     {
       define('K_CELL_HEIGHT_RATIO', 1.25);
     }
-    if (!defined('K_TITLE_MAGNIFICATION')
+    if (!defined('K_TITLE_MAGNIFICATION'))
     {
       define('K_TITLE_MAGNIFICATION', 1.3);
     }
-    if (!defined('K_SMALL_RATIO')
+    if (!defined('K_SMALL_RATIO'))
     {
       define('K_SMALL_RATIO', 2/3);
     }
-    if (!defined('K_THAI_TOPCHARS')
+    if (!defined('K_THAI_TOPCHARS'))
     {
       define('K_THAI_TOPCHARS', true);
     }
     //define('K_TCPDF_CALLS_IN_HTML', false);
     //define('K_TCPDF_THROW_EXCEPTION_ERROR', false);
-    if (!defined('K_TIMEZONE')
+    if (!defined('K_TIMEZONE'))
     {
       define('K_TIMEZONE', 'UTC');
     }
