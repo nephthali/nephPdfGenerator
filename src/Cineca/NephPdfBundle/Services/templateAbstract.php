@@ -43,6 +43,15 @@ abstract class templateAbstract
   // Add page to pdf
   public static function addPage($pdf){}
 
+  // Current Page page to pdf
+  public static function getCurrentPage($pdf){}
+
+  // Total Pages to pdf
+  public static function getNumPages($pdf){}
+
+  // Last Pages to pdf
+  public static function getLastPage($pdf){}
+
   // print html element
   public static function printTextHtmlCell($pdf,$html){}
 

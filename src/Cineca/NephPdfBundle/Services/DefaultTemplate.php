@@ -204,6 +204,24 @@ class DefaultTemplate extends templateAbstract
 
   }
 
+  // Current Page page to pdf
+  public static function getCurrentPage($pdf)
+  {
+    return $pdf->getPage();
+  }
+
+  // Total Pages to pdf
+  public static function getNumPages($pdf)
+  {
+    return $pdf->getNumPages();
+  }
+
+  // Last Pages to pdf
+  public static function getLastPage($pdf)
+  {
+    return $pdf->lastPage();
+  }
+
   public static function printTextHtmlCell($pdf,$html)
   {
     // Print text using writeHTMLCell()
@@ -213,8 +231,8 @@ class DefaultTemplate extends templateAbstract
 
   public static function applyWatermark($pdf)
   {
-    $pdf->Image('@FAC SIMILE FAC SIMILE FAC SIMILE', 50, 50, 100, '', '', 'http://www.cineca.it', '', false, 300);
-    /*
+    //$pdf->Image('@FAC SIMILE FAC SIMILE FAC SIMILE', 50, 50, 100, '', '', 'http://www.cineca.it', '', false, 300);
+
     $fontType = "Helvetica";
     $fontSize = 35;
     $fontStyle = "B";
@@ -238,7 +256,7 @@ class DefaultTemplate extends templateAbstract
     $pdf->StopTransform();
     // Reset the transparency to default
     $pdf->SetAlpha(1);
-    */
+
   }
 
 }
