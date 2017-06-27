@@ -2,7 +2,7 @@
 
 namespace Cineca\NephPdfBundle\Services;
 
-abstract class templateInterface
+abstract class templateAbstract
 {
   // set document information
   public static function setDefaultsConstant(){}
