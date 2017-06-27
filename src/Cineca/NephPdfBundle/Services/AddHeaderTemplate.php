@@ -2,7 +2,7 @@
 
 namespace Cineca\NephPdfBundle\Services;
 
-class AddHeaderTemplate extends DefaultIemplate
+class AddHeaderTemplate extends DefaultTemplate
 {
   // set default header data
   public static function setHeaders($pdf)
