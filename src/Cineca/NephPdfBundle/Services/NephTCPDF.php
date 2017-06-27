@@ -9,13 +9,13 @@ class NephTCPDF
 {
   private $container;
 
-  public function __construct(ContainerInterface $container)
+  public function __construct()
   {
-    $this->container = $container;
   }
 
-  public function generatePdf($html,$template = 1,$infos = array())
+  public function generatePdf(ContainerInterface $container,$html,$template = 1,$infos = array())
   {
+    $this->container = $container;
     //Get template constant to configure TCPDF
     switch ($template) {
       case 1:
