@@ -43,7 +43,7 @@ class NephTCPDF
         AddHeaderTemplate::addPage($pdf);
         AddHeaderTemplate::printTextHtmlCell($pdf,$html);
         if(isset($infos['watermark']) AND $infos['watermark'] )
-            self::applyWatermark($pdf)
+            self::applyWatermark($pdf);
         // Close and output PDF document
         // This method has several options, check the source code documentation for more information.
         if(isset($infos['filename']))
@@ -72,7 +72,7 @@ class NephTCPDF
         AddHeaderFooterTemplate::addPage($pdf);
         AddHeaderFooterTemplate::printTextHtmlCell($pdf,$html);
         if(isset($infos['watermark']) AND $infos['watermark'] )
-            self::applyWatermark($pdf)
+            self::applyWatermark($pdf);
         // Close and output PDF document
         // This method has several options, check the source code documentation for more information.
         if(isset($infos['filename']))
@@ -102,7 +102,7 @@ class NephTCPDF
         DefaultTemplate::addPage($pdf);
         DefaultTemplate::printTextHtmlCell($pdf,$html);
         if(isset($infos['watermark']) AND $infos['watermark'] )
-            self::applyWatermark($pdf)
+            self::applyWatermark($pdf);
         // Apply watermark if requested
 
 
