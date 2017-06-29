@@ -99,11 +99,16 @@ class NephTCPDF
         DefaultTemplate::setBodyFonts($pdf);
         DefaultTemplate::addPage($pdf);
         DefaultTemplate::printTextHtmlCell($pdf,$html);
-        for($page = 1; $page < DefaultTemplate::getNumPages($pdf); $page++){
+
+        // Apply watermark if requested
+        if(isset($infos['watermark']) AND $infos['watermark'] )
+        {
+            for($page = 1; $page < DefaultTemplate::getNumPages($pdf); $page++){
             DefaultTemplate::ResetPointerToLastDocumentPage($pdf);
             $pdf->setPage($page);
             DefaultTemplate::applyWatermark($pdf);
         }
+
         // Close and output PDF document
         // This method has several options, check the source code documentation for more information.
         if(isset($infos['filename']))
