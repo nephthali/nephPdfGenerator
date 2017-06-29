@@ -148,7 +148,7 @@ class DefaultTemplate extends templateAbstract
     // set margins
     if(!$constant AND !empty($margins))
     {
-      $pdf->SetMargins(implode($margins));
+      $pdf->SetMargins(implode(",",$margins));
     } else {
       $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
     }
