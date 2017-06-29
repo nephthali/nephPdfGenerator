@@ -90,6 +90,9 @@ class NephTCPDF
         //Call TCPDF
         $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
         DefaultTemplate::setDocInformation($pdf);
+        // remove default header/footer
+        $pdf->setPrintHeader(false);
+        $pdf->setPrintFooter(false);
         //DefaultTemplate::setHeaders($pdf);
         //DefaultTemplate::setFooters($pdf);
         //DefaultTemplate::setHFFonts($pdf);
