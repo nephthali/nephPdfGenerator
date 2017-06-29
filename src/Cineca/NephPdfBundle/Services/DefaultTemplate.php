@@ -217,7 +217,7 @@ class DefaultTemplate extends templateAbstract
   }
 
   // Last Pages to pdf
-  public static function getLastPage($pdf)
+  public static function ResetPointerToLastDocumentPage($pdf)
   {
     return $pdf->lastPage();
   }
@@ -247,7 +247,7 @@ class DefaultTemplate extends templateAbstract
     $myX = ( $myPageWidth / 2 ) - $fattoreCentraggio;
     $myY = ( $myPageHeight / 2 ) + $fattoreCentraggio;
     // Set the transparency of the text to really light
-    $pdf->SetAlpha(0.09);
+    $pdf->SetAlpha(0.4);
     // Rotate 45 degrees and write the watermarking text
     $pdf->StartTransform();
     $pdf->Rotate(45, $myX, $myY);

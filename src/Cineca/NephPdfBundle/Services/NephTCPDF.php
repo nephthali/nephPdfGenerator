@@ -100,6 +100,7 @@ class NephTCPDF
         DefaultTemplate::addPage($pdf);
         DefaultTemplate::printTextHtmlCell($pdf,$html);
         for($page = 1; $page < DefaultTemplate::getNumPages($pdf); $page++){
+            DefaultTemplate::ResetPointerToLastDocumentPage($pdf);
             $pdf->setPage($page);
             DefaultTemplate::applyWatermark($pdf);
         }
