@@ -103,10 +103,12 @@ class NephTCPDF
         // Apply watermark if requested
         if(isset($infos['watermark']) AND $infos['watermark'] )
         {
-            for($page = 1; $page < DefaultTemplate::getNumPages($pdf); $page++){
-            DefaultTemplate::ResetPointerToLastDocumentPage($pdf);
-            $pdf->setPage($page);
-            DefaultTemplate::applyWatermark($pdf);
+            for($page = 1; $page < DefaultTemplate::getNumPages($pdf); $page++)
+            {
+                DefaultTemplate::ResetPointerToLastDocumentPage($pdf);
+                $pdf->setPage($page);
+                DefaultTemplate::applyWatermark($pdf);
+            }
         }
 
         // Close and output PDF document
