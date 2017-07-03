@@ -1,6 +1,6 @@
 <?php
 
-namespace Cineca\NephPdfBundle\DependencyInjection;
+namespace Ennva\NephPdfBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('cineca_neph_pdf');
+        $rootNode = $treeBuilder->root('Ennva_neph_pdf');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
