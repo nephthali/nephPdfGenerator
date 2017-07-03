@@ -34,7 +34,7 @@
     },
     "require": {
         "php": ">=5.3.9",
-        "symfony/symfony": "2.7.*"
+        "symfony/symfony": "2.5 - 2.8"
     },
     "require-dev": {
     },
