@@ -1,6 +1,6 @@
 <?php
 
-namespace Cineca\NephPdfBundle\Services;
+namespace Ennva\NephPdfBundle\Services;
 
 class DefaultTemplate extends templateAbstract
 {
@@ -60,7 +60,7 @@ class DefaultTemplate extends templateAbstract
     }
     if (!defined('PDF_HEADER_STRING'))
     {
-      define('PDF_HEADER_STRING', "by Nephthali Djabon - Cineca.it\nwww.cineca.it");
+      define('PDF_HEADER_STRING', "by Nephthali Djabon - Ennva.it\nwww.Ennva.it");
     }
     if (!defined('PDF_UNIT'))
     {
@@ -127,7 +127,7 @@ class DefaultTemplate extends templateAbstract
   public static function setDocInformation($pdf)
   {
     // set document information
-    $pdf->SetCreator('CINECA');
+    $pdf->SetCreator('Ennva');
     $pdf->SetAuthor('Nephthali Djabon');
     $pdf->SetTitle(PDF_HEADER_TITLE);
     $pdf->SetSubject('TCPDF Tutorial');
@@ -236,7 +236,7 @@ class DefaultTemplate extends templateAbstract
 
   public static function applyWatermark($pdf)
   {
-    //$pdf->Image('@FAC SIMILE FAC SIMILE FAC SIMILE', 50, 50, 100, '', '', 'http://www.cineca.it', '', false, 300);
+    //$pdf->Image('@FAC SIMILE FAC SIMILE FAC SIMILE', 50, 50, 100, '', '', 'http://www.Ennva.it', '', false, 300);
 
     $fontType = "Helvetica";
     $fontSize = 35;

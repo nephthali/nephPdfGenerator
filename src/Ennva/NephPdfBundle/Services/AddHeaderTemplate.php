@@ -1,6 +1,6 @@
 <?php
 
-namespace Cineca\NephPdfBundle\Services;
+namespace Ennva\NephPdfBundle\Services;
 
 class AddHeaderTemplate extends DefaultTemplate
 {
@@ -8,8 +8,8 @@ class AddHeaderTemplate extends DefaultTemplate
   public static function setHeaders($pdf)
   {
     // set default header data
-    //define('PDF_HEADER_LOGO', K_PATH_IMAGES.'CINECALOGO2008.jpg');
-    //define('PDF_HEADER_STRING', K_PATH_IMAGES.'CINECALOGO2008.jpg');
+    //define('PDF_HEADER_LOGO', K_PATH_IMAGES.'EnnvaLOGO2008.jpg');
+    //define('PDF_HEADER_STRING', K_PATH_IMAGES.'EnnvaLOGO2008.jpg');
     $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE,PDF_HEADER_STRING, array(0,64,255), array(0,64,128));
   }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cineca\NephPdfBundle\Services;
+namespace Ennva\NephPdfBundle\Services;
 
 use TCPDF;
 

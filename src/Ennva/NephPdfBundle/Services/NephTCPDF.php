@@ -1,6 +1,6 @@
 <?php
 
-namespace Cineca\NephPdfBundle\Services;
+namespace Ennva\NephPdfBundle\Services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use TCPDF;
@@ -50,7 +50,7 @@ class NephTCPDF
         {
           $pdf->Output($infos['filename'], 'I');
         }
-        $pdf->Output('cineca.pdf', 'I');
+        $pdf->Output('Ennva.pdf', 'I');
       break;
       case 2:
         #######################################################################################
@@ -79,7 +79,7 @@ class NephTCPDF
         {
           $pdf->Output($infos['filename'], 'I');
         }
-        $pdf->Output('cineca.pdf', 'I');
+        $pdf->Output('Ennva.pdf', 'I');
       break;
 
       default:
@@ -115,7 +115,7 @@ class NephTCPDF
         {
           $pdf->Output($infos['filename'], 'I');
         }
-        $pdf->Output('cineca.pdf', 'I');
+        $pdf->Output('Ennva.pdf', 'I');
       break;
     }
 
