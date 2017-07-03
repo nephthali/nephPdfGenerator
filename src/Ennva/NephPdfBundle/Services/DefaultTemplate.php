@@ -198,7 +198,24 @@ class DefaultTemplate extends templateAbstract
     // dejavusans is a UTF-8 Unicode font, if you only need to
     // print standard ASCII chars, you can use core fonts like
     // helvetica or times to reduce file size.
-    $pdf->SetFont('dejavusans', '', 14, '', true);
+    /**
+    * The PDF Core (standard) fonts are:
+    * courier : Courier
+    * courierB : Courier Bold
+    * courierBI : Courier Bold Italic
+    * courierI : Courier Italic
+    * helvetica : Helvetica
+    * helveticaB : Helvetica Bold
+    * helveticaBI : Helvetica Bold Italic
+    * helveticaI : Helvetica Italic
+    * symbol : Symbol
+    * times : Times New Roman
+    * timesB : Times New Roman Bold
+    * timesBI : Times New Roman Bold Italic
+    * timesI : Times New Roman Italic
+    * zapfdingbats : Zapf Dingbats
+    */
+    $pdf->SetFont('times', '', 12, '', true);
   }
 
   public static function setTextShadow($pdf)
