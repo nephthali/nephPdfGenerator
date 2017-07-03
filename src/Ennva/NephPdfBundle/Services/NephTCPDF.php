@@ -97,7 +97,11 @@ class NephTCPDF
         //DefaultTemplate::setFooters($pdf);
         //DefaultTemplate::setHFFonts($pdf);
         DefaultTemplate::setMonospacedFont($pdf);
-        DefaultTemplate::setMargins($pdf,true,[]);
+        //SetLeftMargin(), SetTopMargin(), SetRightMargin(), SetAutoPageBreak()
+        $pdf->SetLeftMargin(10);
+        $pdf->SetTopMargin(10);
+        $pdf->SetRightMargin(5);
+        //DefaultTemplate::setMargins($pdf,true,[]);
         DefaultTemplate::setPageBreaks($pdf);
         DefaultTemplate::setImgScaleFactor($pdf);
         DefaultTemplate::setLangDependent($pdf);
