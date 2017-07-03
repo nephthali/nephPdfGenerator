@@ -70,7 +70,7 @@ class DefaultTemplate extends templateAbstract
     //define ('PDF_MARGIN_FOOTER', 10);
     //define ('PDF_MARGIN_TOP', 27);
     //define ('PDF_MARGIN_BOTTOM', 25);
-    if(!define('PDF_MARGIN_BOTTOM'))
+    if(!defined('PDF_MARGIN_BOTTOM'))
     {
       define ('PDF_MARGIN_BOTTOM', 25);
     }
