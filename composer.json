@@ -1,30 +1,30 @@
 {
-    "name": "cineca/nephPdf",
+    "name": "ennva/nephPdf",
     "license": "proprietary",
     "type": "project",
     "autoload": {
         "psr-4": {
             "": "src/",
-            "Cineca\\" : "src/"
+            "Ennva\\" : "src/"
         },
         "classmap": [
-        "src/Cineca/tcpdf/fonts",
-        "src/Cineca/tcpdf/config",
-        "src/Cineca/tcpdf/include",
-        "src/Cineca/tcpdf/tcpdf.php",
-        "src/Cineca/tcpdf/tcpdf_parser.php",
-        "src/Cineca/tcpdf/tcpdf_import.php",
-        "src/Cineca/tcpdf/tcpdf_barcodes_1d.php",
-        "src/Cineca/tcpdf/tcpdf_barcodes_2d.php",
-        "src/Cineca/tcpdf/include/tcpdf_colors.php",
-        "src/Cineca/tcpdf/include/tcpdf_filters.php",
-        "src/Cineca/tcpdf/include/tcpdf_font_data.php",
-        "src/Cineca/tcpdf/include/tcpdf_fonts.php",
-        "src/Cineca/tcpdf/include/tcpdf_images.php",
-        "src/Cineca/tcpdf/include/tcpdf_static.php",
-        "src/Cineca/tcpdf/include/barcodes/datamatrix.php",
-        "src/Cineca/tcpdf/include/barcodes/pdf417.php",
-        "src/Cineca/tcpdf/include/barcodes/qrcode.php"
+        "src/Ennva/tcpdf/fonts",
+        "src/Ennva/tcpdf/config",
+        "src/Ennva/tcpdf/include",
+        "src/Ennva/tcpdf/tcpdf.php",
+        "src/Ennva/tcpdf/tcpdf_parser.php",
+        "src/Ennva/tcpdf/tcpdf_import.php",
+        "src/Ennva/tcpdf/tcpdf_barcodes_1d.php",
+        "src/Ennva/tcpdf/tcpdf_barcodes_2d.php",
+        "src/Ennva/tcpdf/include/tcpdf_colors.php",
+        "src/Ennva/tcpdf/include/tcpdf_filters.php",
+        "src/Ennva/tcpdf/include/tcpdf_font_data.php",
+        "src/Ennva/tcpdf/include/tcpdf_fonts.php",
+        "src/Ennva/tcpdf/include/tcpdf_images.php",
+        "src/Ennva/tcpdf/include/tcpdf_static.php",
+        "src/Ennva/tcpdf/include/barcodes/datamatrix.php",
+        "src/Ennva/tcpdf/include/barcodes/pdf417.php",
+        "src/Ennva/tcpdf/include/barcodes/qrcode.php"
         ]
     },
     "autoload-dev": {
